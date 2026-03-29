@@ -3,9 +3,14 @@ let numeroSecreto = 29;
 console.log(numeroSecreto); //ver o numero secreto no log
 let tentativa = prompt("Escolha um numero de entre 1 e 1000");
 
-if(numeroSecreto == tentativa) {
-    alert("Você acertou o número secreto (29)");
+if(tentativa == numeroSecreto) {
+    alert(`Você acertou o número secreto ${numeroSecreto}`);
 }
 else {
-    alert("Você errou");
+   if(tentativa < numeroSecreto){
+        alert(`O número secreto é maior que ${tentativa}`);
+   }
+   else{
+        alert(`O número secreto é menor que ${tentativa}`);
+   }
 }
