@@ -1,12 +1,13 @@
 alert("Bem vindo ao jogo do número secreto");
 let numeroSecreto = 29;
 console.log(numeroSecreto); //ver o numero secreto no log
-let numTentativas = 1;
+let tentativa;
+let numTentativas = 0;
 
 while(tentativa != numeroSecreto){
     tentativa = prompt("Escolha um numero de entre 1 e 1000");
     if(tentativa == numeroSecreto) {
-        alert(`Você acertou o número secreto (${numeroSecreto})`);
+        alert(`Você acertou o número secreto (${numeroSecreto}) com ${numTentativas} tentativas`);
     }
     else {
         if(tentativa < numeroSecreto){
@@ -15,5 +16,6 @@ while(tentativa != numeroSecreto){
         else{
             alert(`O número secreto é menor que ${tentativa}`);
         }
+        numTentativas ++;
     }
 }
