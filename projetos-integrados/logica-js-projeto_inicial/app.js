@@ -20,9 +20,13 @@ while(tentativa != numeroSecreto){
     }
 }
 
-if(numTentativas > 1){
-    alert(`Você acertou o número secreto (${numeroSecreto}) com ${numTentativas} tentativas`);
-}
-else{
-    alert(`Você acertou o número secreto (${numeroSecreto}) com ${numTentativas} tentativa`);
-}
+// if(numTentativas > 1){
+//     alert(`Você acertou o número secreto (${numeroSecreto}) com ${numTentativas} tentativas`);
+// }
+// else{
+//     alert(`Você acertou o número secreto (${numeroSecreto}) com ${numTentativas} tentativa`);
+// }
+//outro jeito:
+let palavraTentativa = numTentativas > 1 ? 'tentativas' : 'tentativa';
+//significa: ?(caso tentativa) > 1 coloca "tentativas" :(se não) usa "tentativa"
+alert(`Você acertou o número secreto (${numeroSecreto}) com ${numTentativas} tentativa`);
