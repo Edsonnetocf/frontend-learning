@@ -1,11 +1,11 @@
-alert("Bem vindo ao jogo do número secreto");
-let numeroSecreto = parseInt(Math.random() * 1000 + 1);
+let maxSecreto = prompt("Bem vindo ao jogo do número secreto! Escolha o valor máximo do número secreto.");
+let numeroSecreto = parseInt(Math.random() * maxSecreto + 1);
 console.log(numeroSecreto); //ver o numero secreto no log
 let tentativa;
 let numTentativas = 1;
 
 while(tentativa != numeroSecreto){
-    tentativa = prompt("Escolha um numero de entre 1 e 1000");
+    tentativa = prompt(`Escolha um número de entre 1 e ${maxSecreto}`);
     if(tentativa == numeroSecreto) {
         break;
     }
