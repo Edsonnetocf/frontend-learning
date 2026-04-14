@@ -5,7 +5,21 @@ function exibirTextoNaTela(tag, texto){
 
 function verificarChute(){
     let chute = document.querySelector('input').value; //value pega o valor
-    console.log (chute == numeroSecreto);
+    
+    if (chute == numeroSecreto) {
+        exibirTextoNaTela('h1', 'Acertou!');
+        exibirTextoNaTela('p', 'Você descobriu o número secreto');
+    }
+    else{
+        if(chute > numeroSecreto){
+            exibirTextoNaTela('p', 'O numero secreto é menor');
+        }
+        else{
+            if(chute < numeroSecreto){
+            exibirTextoNaTela('p', 'O numero secreto é maior');
+            }
+        }
+    }
 }
 
 function gerarNumAleatorio(){
