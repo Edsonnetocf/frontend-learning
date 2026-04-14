@@ -4,7 +4,8 @@ function exibirTextoNaTela(tag, texto){
 }
 
 function verificarChute(){
-    console.log ('O botão foi clicado');
+    let chute = document.querySelector('input').value; //value pega o valor
+    console.log (chute == numeroSecreto);
 }
 
 function gerarNumAleatorio(){
