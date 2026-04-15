@@ -11,7 +11,7 @@ function verificarChute(){
         let palavraTentativa =  tentativas > 1 ? 'tentativas' : 'tentativa';
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}`;
         exibirTextoNaTela('p', mensagemTentativas);
-        document.getElementById('reiniciar').removeAttribute('disabled');//alterando pelo o que já estava no html
+        document.getElementById('reiniciar').removeAttribute('disabled');//alterando pelo o que já estava no html (linha 28) 
     }
     else{
         if(chute > numeroSecreto){
@@ -36,10 +36,21 @@ function limparCampo() {
     chute.value = '';
 }
 
+function reiniciarJogo() {
+    numeroSecreto = gerarNumAleatorio();
+    limparCampo();
+    tentativas = 1;
+    exibirMensagemInicial();
+}
+
+function exibirMensagemInicial() {
+    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+}
+
 let numeroSecreto = gerarNumAleatorio();
 let tentativas = 1;
 
-exibirTextoNaTela('h1', 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+exibirMensagemInicial();
 
 
