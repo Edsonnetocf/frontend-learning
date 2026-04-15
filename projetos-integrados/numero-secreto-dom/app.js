@@ -22,11 +22,17 @@ function verificarChute(){
             }
         }
         tentativas++;
+        limparCampo();
     }
 }
 
 function gerarNumAleatorio(){
     return parseInt(Math.random() * 10 + 1);
+}
+
+function limparCampo() {
+    chute = document.querySelector('input');
+    chute.value = '';
 }
 
 let numeroSecreto = gerarNumAleatorio();
