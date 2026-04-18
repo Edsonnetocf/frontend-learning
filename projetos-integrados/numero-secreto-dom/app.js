@@ -1,3 +1,5 @@
+let listaDeNumerosSorteados = [];
+
 function exibirTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -28,7 +30,15 @@ function verificarChute(){
 }
 
 function gerarNumAleatorio(){
-    return parseInt(Math.random() * 10 + 1);
+    let numerEscolhido = parseInt(Math.random() * 10 + 1);
+    if (listaDeNumerosSorteados.includes(numerEscolhido)) { //includes: verifica se o elemento ta na lista, se sim TRUE se não FALSE
+        return  gerarNumAleatorio();
+    }
+    else{
+        listaDeNumerosSorteados.push(numerEscolhido); //perga o valor e coloca no final da lista
+        console.log(listaDeNumerosSorteados);
+        return numerEscolhido; 
+    }
 }
 
 function limparCampo() {
