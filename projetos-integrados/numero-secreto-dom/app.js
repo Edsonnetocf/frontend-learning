@@ -6,6 +6,13 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+
+    let fala = new SpeechSynthesisUtterance(texto);
+    fala.lang = 'pt-BR';
+    fala.rate = 1.2;
+
+    speechSynthesis.cancel();
+    speechSynthesis.speak(fala);
 }
 
 function verificarChute(){
@@ -49,7 +56,7 @@ function gerarNumAleatorio(){
 }
 
 function limparCampo() {
-    chute = document.querySelector('input');
+    let chute = document.querySelector('input');
     chute.value = '';
 }
 
