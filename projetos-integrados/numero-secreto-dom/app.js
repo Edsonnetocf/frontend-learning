@@ -1,3 +1,4 @@
+//finalizado
 let listaDeNumerosSorteados = [];
 let numeroLitmite = 10;
 let numeroSecreto = gerarNumAleatorio();
