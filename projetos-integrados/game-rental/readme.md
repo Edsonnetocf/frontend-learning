@@ -1,7 +1,7 @@
 # Projeto
 
 ## Status
-Projeto em desenvolvimento.
+Finalizado.
 
 ## Descrição
 Projeto utilizado para prática de JavaScript com manipulação do DOM e controle de estado de elementos.
