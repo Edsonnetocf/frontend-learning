@@ -1,4 +1,8 @@
 body {
-    background-color: grey;
+    background-color: #282A36;
     color: white;
+}
+
+strong {
+    color: palevioletred;
 }
