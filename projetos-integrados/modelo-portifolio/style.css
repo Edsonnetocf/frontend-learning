@@ -4,10 +4,17 @@
 }
 
 body {
+    height: 100vh;
+    box-sizing: border-box;         /*encaixa os filhos dentro do pai*/
     background-color: #282A36;
     color: white;
 }
 
 .titulo-destaque {
     color: palevioletred;
+}
+
+.apresentacao {
+    display: flex;                 /*deixa tudo na mesma linha */
+    align-items: center;            /*pega o elemento de maior altura e e usa ele como base para definir o centro*/  
 }
