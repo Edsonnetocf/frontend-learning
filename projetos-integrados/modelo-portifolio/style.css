@@ -36,3 +36,21 @@ body {
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
 }
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: palevioletred;
+    width: 280px;
+    text-align: center;               /*alinha o texto*/
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21px 0;                  /*dois valores de padding: primeiro valor para o eixo vertical, segundo é o horizontal*/
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
