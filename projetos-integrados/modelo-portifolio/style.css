@@ -15,6 +15,20 @@ body {
 }
 
 .apresentacao {
+    margin: 10%;
     display: flex;                 /*deixa tudo na mesma linha */
-    align-items: center;            /*pega o elemento de maior altura e e usa ele como base para definir o centro*/  
+    align-items: center;            /*pega o elemento de maior altura e e usa ele como base para definir o centro*/
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 600px;
+}
+
+.presentacao__conteudo__tutulo {
+    font-size: 36px;
+}
+
+.presentacao__conteudo__paragrafo {
+    font-size: 24px;
 }
