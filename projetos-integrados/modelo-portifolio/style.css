@@ -13,11 +13,11 @@ body {
 }
 
 .titulo-destaque {
-    color: palevioletred;
+    color: rgb(216, 112, 147);
 }
 
 .apresentacao {
-    margin: 10%;
+    margin: 15%;
     display: flex;                 /*deixa tudo na mesma linha */
     align-items: center;            /*pega o elemento de maior altura e e usa ele como base para definir o centro*/
     justify-content: space-between;
@@ -25,6 +25,9 @@ body {
 
 .apresentacao__conteudo {
     width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;                      /*espaçamento*/
 }
 
 .apresentacao__conteudo__titulo {
@@ -39,14 +42,23 @@ body {
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
     justify-content: space-between;
 }
 
+.apresentacao__links__subtitulo {
+    font-family:'Krona One', 'sans-serif';
+    font-weight: 400;
+    font-size: 24px;
+}
+
 .apresentacao__links__link {
-    background-color: palevioletred;
-    width: 280px;
+    border: 2px solid palevioletred;
+    width: 380px;
     text-align: center;               /*alinha o texto*/
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
     padding: 21px 0;                  /*dois valores de padding: primeiro valor para o eixo vertical, segundo é o horizontal*/
