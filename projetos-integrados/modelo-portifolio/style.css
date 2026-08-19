@@ -55,6 +55,9 @@ body {
 }
 
 .apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     border: 2px solid palevioletred;
     width: 380px;
     text-align: center;               /*alinha o texto*/
@@ -65,4 +68,8 @@ body {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #404257f9;
 }
