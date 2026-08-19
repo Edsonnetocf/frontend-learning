@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100vh;
+    /*height: 100vh; */             /*tirando para pegar todo o conteudo da página*/
     box-sizing: border-box;         /*encaixa os filhos dentro do pai*/
     background-color: #282A36;
     color: white;
@@ -17,7 +17,7 @@ body {
 }
 
 .apresentacao {
-    margin: 15%;
+    padding: 8% 15%;
     display: flex;                 /*deixa tudo na mesma linha */
     align-items: center;            /*pega o elemento de maior altura e e usa ele como base para definir o centro*/
     justify-content: space-between;
@@ -72,4 +72,14 @@ body {
 
 .apresentacao__links__link:hover {
     background-color: #404257f9;
+}
+
+.rodape {
+    padding: 24px;
+    color: #282A36;
+    background-color: palevioletred;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
