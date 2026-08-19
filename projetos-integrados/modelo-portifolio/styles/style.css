@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+:root {
+    --cor-primaria: #282A36;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #d87093;
+    --cor-hover: #404257f9;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +18,8 @@
 body {
     /*height: 100vh; */             /*tirando para pegar todo o conteudo da página*/
     box-sizing: border-box;         /*encaixa os filhos dentro do pai*/
-    background-color: #282A36;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -22,10 +32,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
-    font-weight: 600px;
-    color: palevioletred;
+    font-weight: 600;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -45,16 +55,16 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .titulo-destaque {
-    color: rgb(216, 112, 147);
+    color: var(--cor-terciaria);
 }
 
 .presentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links {
@@ -66,7 +76,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-family:'Krona One', 'sans-serif';
+    font-family:var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -75,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid palevioletred;
+    border: 2px solid var(--cor-terciaria);
     width: 380px;
     text-align: center;               /*alinha o texto*/
     border-radius: 8px;
@@ -83,20 +93,20 @@ body {
     font-weight: 600;
     padding: 21px 0;                  /*dois valores de padding: primeiro valor para o eixo vertical, segundo é o horizontal*/
     text-decoration: none;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links__link:hover {
-    background-color: #404257f9;
+    background-color: var(--cor-hover);
 }
 
 .rodape {
     padding: 24px;
     color: #282A36;
-    background-color: palevioletred;
+    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
