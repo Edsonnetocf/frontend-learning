@@ -1,5 +1,8 @@
 # Projeto
 
+## Status
+Projeto finalizado.
+
 ## Descrição
 Projeto utilizado para prática de JavaScript.
 

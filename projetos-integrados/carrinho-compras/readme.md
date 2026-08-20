@@ -1,7 +1,7 @@
 # Projeto
 
 ## Status
-Projeto em desenvolvimento.
+Projeto finalizado.
 
 ## Descrição
 Projeto utilizado para prática de JavaScript com manipulação do DOM e lógica de carrinho de compras.
