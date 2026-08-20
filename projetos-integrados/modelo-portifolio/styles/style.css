@@ -44,10 +44,11 @@ body {
     display: flex;                 /*deixa tudo na mesma linha */
     align-items: center;            /*pega o elemento de maior altura e e usa ele como base para definir o centro*/
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
-    width: 600px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;                      /*espaçamento*/
@@ -81,12 +82,12 @@ body {
     font-size: 1.5rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 380px;
+    width: 50%;
     text-align: center;               /*alinha o texto*/
     border-radius: 8px;
     font-size: 1.5rem;
@@ -101,6 +102,10 @@ body {
     background-color: var(--cor-hover);
 }
 
+.apresentacao__imagem {
+    width: 50%;
+}
+
 .rodape {
     padding: 24px;
     color: #282A36;
@@ -109,4 +114,22 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
 }
